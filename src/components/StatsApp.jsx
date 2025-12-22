@@ -1,4 +1,4 @@
-import mujerEntrenando from "../assets/image/mujerEntrenando.jpg";
+import mujerEntrenando from "../assets/image/mujerEntrenando.webp";
 import Counter from "./Counter";
 
 const StatsApp = () => {
@@ -11,10 +11,10 @@ const StatsApp = () => {
         backgroundPosition: "center",
       }}
     >
-      {/* Overlay oscuro */}
+     
       <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Contenido */}
+   
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center text-white">
 
