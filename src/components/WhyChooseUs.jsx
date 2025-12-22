@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook,  faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import personalTrainer from "../assets/image/personalTrainer.avif";
+import entrenadorpersonal from "../assets/image/entrenadorpersonal.webp";
 
 const WhyChooseUs = () => {
   return (
@@ -48,11 +48,13 @@ const WhyChooseUs = () => {
           </div>
         </div>
     
-        <img
-          src={personalTrainer}
-          alt="Imagen de entrenador personal"
-          className=" rounded-lg lg:w-4xl"
-        />
+       <img 
+          alt="Imagen de entrenador personal" 
+          className="rounded-lg lg:w-4xl h-auto" 
+          src={entrenadorpersonal}
+          width="1200" 
+          height="800"
+            />
 
       </div>
     </section>
