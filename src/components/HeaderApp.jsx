@@ -1,4 +1,4 @@
-import hombreImg from "../assets/image/hombreImg.jpg";
+import hombreImg from "../assets/image/hombreImg.webp";
 import ButtonApp from "./ButtonApp";
 
 const HeaderApp = () => {
