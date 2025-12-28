@@ -1,13 +1,19 @@
-import hombreImg from "../assets/image/hombreImg.webp";
 import ButtonApp from "./ButtonApp";
 
 const HeaderApp = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <img
-        src={hombreImg}
+        src="/assets/hombre-1440.webp"
+        srcSet="
+    /assets/hombre-768.webp 768w,
+    /assets/hombre-1440.webp 1440w,
+  "
+        sizes="100vw"
         alt="Hombre entrenando"
         className="absolute inset-0 w-full h-full object-cover brightness-50"
+        loading="eager"
+        fetchpriority="high"
       />
 
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center gap-6">
@@ -25,8 +31,16 @@ const HeaderApp = () => {
           <span className="text-outline">Transformá tu</span>
           <span className="text-primary p-4">vida</span>
         </h1>
-        <p className="text-secondary text-center text-xs lg:text-lg ">Cada repetición te acerca a la mejor versión de vos.</p>
-      <ButtonApp className="" title={"Ver planes"} background={"bg-primary"} bghover={"hover:bg-tertiary"} href={"#planes"}/>
+        <p className="text-secondary text-center text-xs lg:text-lg ">
+          Cada repetición te acerca a la mejor versión de vos.
+        </p>
+        <ButtonApp
+          className=""
+          title={"Ver planes"}
+          background={"bg-primary"}
+          bghover={"hover:bg-tertiary"}
+          href={"#planes"}
+        />
       </div>
     </div>
   );
