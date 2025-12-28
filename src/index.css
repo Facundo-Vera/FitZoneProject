@@ -25,6 +25,12 @@ html {
   .bg-dark {
     background-color: var(--color-bg);
   }
-  
+  .reveal-active .reveal-overlay {
+    transform: translateX(100%);
+  }
+
+  .reveal-active .reveal-img {
+    transform: scale(1);
+  }
 
 }
